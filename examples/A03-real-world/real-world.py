@@ -100,4 +100,4 @@ emu.render()
 ###############################################################################
 # Compilation 
 
-emu.compile(Docker(), './output')
+emu.compile(Docker(internetMapEnabled=True), './output', override=True)
