@@ -10,16 +10,16 @@ config_path = Path(__file__).parent
 with open(Path(config_path, 'ovpn_key')) as f:
     OpenVpnRapFileTemplates['ovpn_key'] = f.read()
 
-with open(Path(config_path, 'ovpn_ca').with_suffix('crt')) as f:
+with open(Path(config_path, 'ovpn_ca.crt')) as f:
     OpenVpnRapFileTemplates['ovpn_ca'] = f.read()
 
-with open(Path(config_path, 'ovpn_cert').with_suffix('crt')) as f:
+with open(Path(config_path, 'ovpn_cert.crt')) as f:
     OpenVpnRapFileTemplates['ovpn_cert'] = f.read()
 
-with open(Path(config_path, 'ovpn_server_config').with_suffix('ovpn')) as f:
+with open(Path(config_path, 'ovpn_server_config.ovpn')) as f:
     OpenVpnRapFileTemplates['ovpn_server_config'] = f.read()
 
-with open(Path(config_path, 'ovpn_startup').with_suffix('sh')) as f:
+with open(Path(config_path, 'ovpn_startup.sh')) as f:
     OpenVpnRapFileTemplates['ovpn_startup_script'] = f.read()
 
 
